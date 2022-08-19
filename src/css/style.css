@@ -1,0 +1,750 @@
+/* Fonts */
+@font-face {
+	font-family: creato;
+	src: url(../../fonts/creato-display/CreatoDisplay-Regular.otf);
+}
+
+@font-face {
+	font-family: creato-light;
+	src: url(../../fonts/creato-display/CreatoDisplay-Thin.otf);
+}
+
+@font-face {
+	font-family: bell;
+	src: url(../../fonts/bell_mt/BellMT.ttf);
+}
+
+@font-face {
+	font-family: bell-Thin;
+	src: url(../../fonts/bell_mt/bell-mt-fett.ttf);
+}
+
+@font-face {
+	font-family: bell-Italic;
+	src: url(../../fonts/bell_mt/BellMTItalic.ttf);
+}
+
+@font-face {
+	font-family: bell-bold;
+	src: url(../../fonts/bell_mt/BellMTBold.ttf);
+}
+
+body {
+	width: 100%;
+	overflow-x: none;
+	margin: 0;
+	padding: 0;
+}
+
+.vh {
+	height: 100vh;
+}
+
+/* Navbar */
+
+#nav {
+	background: url(../../media/nav/navbg.svg);
+	background-size: 100%;
+	height: 120px;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	padding: 3.1% 0px 3.2% 0px;
+	display: flex;
+	position: sticky;
+	width: 100%;
+	z-index: 100;
+}
+
+#header {
+	position: fixed;
+	background-color: #fff;
+	height: 10px;
+	z-index: 100;
+}
+
+#nav p {
+	font-family: creato;
+	z-index: 100;
+}
+
+#main {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.img {
+	height: 40px;
+	width: 48px;
+	background: url(../../media/logos/VD.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	transform: translateY(-10px);
+	background-position: center;
+}
+
+#nav .navlogo {
+	background: url(../../media/logos/VD.png);
+	background-size: 10%;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 50px;
+	width: 56px;
+}
+
+#nav .club {
+	padding-left: 6%;
+}
+
+/*
+#nav .about {
+	padding-left: 10%;
+}
+
+#nav .contact {
+	padding-left: 10%;
+}
+
+#nav .apply {
+	padding-left: 10%;
+} */
+
+svg {
+	z-index: 1;
+}
+
+#Hero {
+	/* background: url(../../media/hero-section/mountain.png); */
+	height: 140vh;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
+.parent {
+	position: relative;
+}
+
+#calm {
+	background: url(../../media/hero-section/calm.svg);
+	height: 70vh;
+	background-size: 100% 100%;
+}
+
+/* Balloon */
+
+#balloon {
+	animation: balloonHero 3s ease-in-out;
+	animation-iteration-count: infinite;
+	z-index: 1;
+}
+
+@keyframes balloonHero {
+	0% {
+		transform: rotate(0);
+		transform-origin: right;
+	}
+
+	50% {
+		transform: rotate(1deg);
+		transform-origin: left;
+	}
+
+	100% {
+		transform: rotate(0deg);
+		transform-origin: bottom;
+	}
+}
+
+/* Leave-1 */
+
+#left-leaf-1 {
+	animation: leftleaf 3s ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+#left-leaf-2 {
+	animation: leftleaf 3s ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+#right-leaf-1 {
+	animation: rightleaf 3s ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes leftleaf {
+	0% {
+		transform: rotate(0);
+		transform-origin: left;
+		transform-box: fill-box;
+	}
+
+	50% {
+		transform: rotate(3deg);
+		transform-origin: bottom;
+		transform-box: fill-box;
+	}
+
+	100% {
+		transform: rotate(0deg);
+		transform-origin: bottom;
+		transform-box: fill-box;
+	}
+}
+
+@keyframes rightleaf {
+	0% {
+		transform: rotate(0);
+		transform-origin: bottom;
+		transform-box: fill-box;
+	}
+
+	50% {
+		transform: rotate(3deg);
+		transform-origin: bottom;
+		transform-box: fill-box;
+	}
+
+	100% {
+		transform: rotate(0deg);
+		transform-origin: bottom;
+		transform-box: fill-box;
+	}
+}
+
+/* Drops */
+
+#drop-1,
+#drop-2,
+#drop-3,
+#drop-4,
+#drop-5,
+#drop-6 {
+	animation: drops 3s ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+/* #drop-2 {
+	animation: drops 3s ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+#drop-3 {
+	animation: drops 3s ease-in-out;
+	animation-iteration-count: infinite;
+} */
+
+@keyframes drops {
+	0% {
+		fill: #fff;
+	}
+
+	50% {
+		fill: #0070a0;
+	}
+
+	100% {
+		fill: #fff;
+	}
+}
+
+/* Leaf-2 and Leaf-3 */
+#leaf-2 {
+	animation: leaf-2 3s ease;
+	animation-iteration-count: infinite;
+	position: relative;
+	top: 10px;
+}
+
+#leaf-3 {
+	animation: leaf-3 3s ease;
+	animation-iteration-count: infinite;
+}
+
+@keyframes leaf-2 {
+	0% {
+		transform: rotate(0);
+		transform-origin: bottom right;
+		transform-box: fill-box;
+	}
+	50% {
+		transform: rotate(5deg);
+		transform-origin: bottom right;
+		transform-box: fill-box;
+	}
+	100% {
+		transform: rotate(0);
+		transform-origin: bottom right;
+		transform-box: fill-box;
+	}
+}
+
+@keyframes leaf-3 {
+	0% {
+		transform: rotate(0);
+		transform-origin: bottom left;
+		transform-box: fill-box;
+	}
+	50% {
+		transform: rotate(3deg);
+		transform-origin: bottom left;
+		transform-box: fill-box;
+	}
+	100% {
+		transform: rotate(0);
+		transform-origin: bottom left;
+		transform-box: fill-box;
+	}
+}
+
+/* #leaf-1 {
+	animation: leaf-1 3s ease-in-out;
+	animation-iteration-count: infinite;
+} 
+
+@keyframes leaf-1 {
+	0% {
+		transform: rotate(0);
+		transform-origin: right;
+	}
+
+	50% {
+		transform: rotate(0.2deg);
+		transform-origin: bottom;
+	}
+
+	100% {
+		transform: rotate(0deg);
+		transform-origin: right;
+	}
+} */
+
+/* Vision */
+#Vision {
+	margin-top: 46%;
+}
+
+.visionText {
+	font-family: bell-Italic;
+	font-size: 22px;
+}
+
+.empowerText {
+	font-size: 35px;
+	letter-spacing: 7px;
+	font-family: creato-light;
+	margin-top: 3%;
+}
+
+#victory {
+	margin-top: 71.9%;
+}
+
+.victoryHeader {
+	font-size: 22px;
+	font-family: bell-Italic;
+	word-spacing: 1.25px;
+}
+
+.areYouText,
+.dreamText,
+.worryText {
+	font-size: 45px;
+	font-family: bell;
+	letter-spacing: 7px;
+	word-spacing: 1.4px;
+}
+
+.worryBar {
+	height: 7px;
+	background-color: #0070a0;
+	border-radius: 10px;
+	width: 10%;
+	transition: width 0.3s;
+	transform: translateY(-20px) translateX(-20px);
+}
+
+.victoryTextDiv {
+	margin-top: 10%;
+}
+
+.victoryText {
+	font-size: 20px;
+	font-family: creato;
+}
+
+@media only screen and (max-width: 767px) {
+	.victoryHeader {
+		font-size: 18px;
+		font-family: bell-Italic;
+		word-spacing: 1.25px;
+	}
+
+	.areYouText,
+	.dreamText,
+	.worryText {
+		font-size: 35px;
+		font-family: bell;
+		letter-spacing: 7px;
+		word-spacing: 1.4px;
+	}
+
+	.victoryText {
+		font-size: 16px;
+		font-family: creato;
+	}
+}
+
+/* Cradle Section */
+
+#cradle-section {
+	margin-top: 44.2%;
+}
+
+#cradle-leaf {
+	animation: cradleLeaf 4s ease-in-out infinite;
+	animation-iteration-count: infinite;
+	transform: rotate(0deg);
+}
+
+#cradle-stem {
+	animation: cradleStem 4s ease-in-out 8s infinite;
+	animation-delay: 2.5s;
+	transform: rotate(26deg);
+	transform-origin: top left;
+	transform-box: fill-box;
+}
+
+#cradle-2,
+#cradle-3,
+#cradle-4,
+#cradle-5 {
+	animation: cradle2 3s ease-in-out;
+	animation-iteration-count: infinite;
+	animation-delay: 1.4s;
+}
+
+@keyframes cradleLeaf {
+	0% {
+		transform: rotate(-26deg);
+		transform-origin: top right;
+		transform-box: fill-box;
+	}
+	20% {
+		transform: rotate(0deg);
+		transform-origin: top right;
+		transform-box: fill-box;
+	}
+	50% {
+		transform: rotate(-26deg);
+		transform-origin: top right;
+		transform-box: fill-box;
+	}
+	100% {
+		transform: rotate(-26deg);
+		transform-origin: top right;
+		transform-box: fill-box;
+	}
+}
+
+@keyframes cradleStem {
+	0% {
+		transform: rotate(24deg);
+		transform-origin: top left;
+		transform-box: fill-box;
+	}
+	20% {
+		transform: rotate(0deg);
+		transform-origin: top left;
+		transform-box: fill-box;
+	}
+	50% {
+		transform: rotate(24deg);
+		transform-origin: top left;
+		transform-box: fill-box;
+	}
+	100% {
+		transform: rotate(24deg);
+		transform-origin: top left;
+		transform-box: fill-box;
+	}
+}
+
+@keyframes cradle2 {
+	0% {
+		transform: rotate(0);
+		transform-origin: top left;
+		transform-box: fill-box;
+	}
+	50% {
+		transform: rotate(-2deg);
+		transform-origin: top left;
+		transform-box: fill-box;
+	}
+	100% {
+		transform: rotate(0);
+		transform-origin: top left;
+		transform-box: fill-box;
+	}
+}
+
+.byDiv {
+	margin-top: 13.7%;
+}
+
+.byText,
+.forText {
+	font-family: creato-light;
+	font-size: 24px;
+	letter-spacing: 7px;
+	text-align: center;
+}
+
+.envisionDiv {
+	margin-top: 13.9%;
+}
+
+.envision {
+	font-size: 18px;
+	text-align: center;
+	font-family: creato;
+}
+
+@media only screen and (min-width: 768px) {
+	.byText,
+	.forText {
+		font-size: 22px;
+		letter-spacing: 7px;
+		text-align: center;
+	}
+
+	.envision {
+		font-size: 16px;
+		text-align: center;
+	}
+}
+
+/* Why VD Section */
+
+#whyVD {
+	margin-top: 42.5%;
+}
+
+.whyVDText {
+	font-family: bell-Italic;
+}
+
+.eduText,
+.menText,
+.empText {
+	font-family: bell;
+	font-size: 40px;
+	letter-spacing: 14px;
+}
+
+.eduBar,
+.menBar,
+.empBar {
+	height: 7px;
+	background-color: #0070a0;
+	border-radius: 10px;
+	width: 10%;
+	transition: width 0.3s;
+	transform: translateY(-20px) translateX(-50px);
+}
+
+.pillar {
+	margin-top: 10%;
+}
+
+.pillarText {
+	font-size: 18px;
+	text-align: center;
+	font-family: creato;
+}
+
+@media only screen and (min-width: 768px) {
+	.whyVDText {
+		font-size: 18px;
+	}
+
+	.eduText,
+	.menText,
+	.empText {
+		font-family: bell;
+		font-size: 35px;
+		letter-spacing: 14px;
+	}
+
+	.pillarText {
+		font-size: 16px;
+		text-align: center;
+		font-family: creato;
+	}
+}
+
+/* Membership Section */
+
+#membership {
+	margin-top: 40%;
+}
+
+.memberText {
+	font-size: 22px;
+	font-family: bell-Italic;
+	word-spacing: 1.2px;
+}
+
+#membershipInfo {
+	margin-top: 10%;
+}
+
+.momentText {
+	font-size: 40px;
+	font-family: bell;
+	letter-spacing: 14px;
+}
+
+.membershipInfoText {
+	font-size: 18px;
+	font-family: creato;
+}
+
+#statsText {
+	margin-top: 15.3%;
+}
+
+.studentsText {
+	font-size: 20px;
+	font-family: creato-light;
+}
+
+.quantity {
+	font-family: creato;
+	font-size: 28px;
+}
+
+#knowDiv {
+	margin-top: 11.2%;
+}
+
+.knowText {
+	font-size: 20px;
+	font-family: creato;
+}
+
+@media only screen and (min-width: 768px) {
+	.memberText {
+		font-size: 22px;
+		font-family: bell-Italic;
+		word-spacing: 1.2px;
+	}
+
+	.momentText {
+		font-size: 35px;
+	}
+
+	.studentsText {
+		font-size: 16px;
+		font-family: creato-light;
+	}
+}
+
+/* Quotes Section */
+
+#quotes {
+	margin-top: 40%;
+}
+
+.quoteText {
+	font-size: 25px;
+	font-family: bell-Italic;
+	word-spacing: 20px;
+}
+
+.manikText {
+	font-size: 18px;
+	font-family: bell-bold;
+	margin-top: 3%;
+}
+
+/* Query Section */
+
+#query {
+	margin-top: 40%;
+}
+
+.contactText {
+	font-size: 22px;
+	font-family: bell-italic;
+}
+
+.queryDiv {
+	margin-top: 3%;
+}
+
+.queryText {
+	font-family: bell-italic;
+	font-size: 25px;
+}
+
+.letsTalkText {
+	font-family: bell;
+	font-size: 65px;
+	letter-spacing: 14px;
+}
+
+.stats2 {
+	margin-top: 6.1%;
+}
+
+.generalText {
+	font-family: creato-light;
+	font-size: 16px;
+}
+
+.stats2 {
+	line-height: 1px;
+}
+
+.contactEmail {
+	font-family: creato;
+	font-size: 18px;
+}
+
+/* Footer */
+
+#footer {
+	margin-top: 44.1%;
+	background: url(../../media/footer/footerbg.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 62vh;
+	padding-top: 10%;
+}
+
+.whiteBars {
+	background: #fff;
+	height: 250px;
+	width: 5px;
+	border-radius: 10px;
+}
+
+.footerOption1,
+.footerOption2 {
+	line-height: 50px;
+}
+
+.clubText {
+	color: #fff;
+	text-decoration: none;
+}
+
+ion-icon:first-child {
+	padding-top: 25px;
+}
+
+ion-icon {
+	color: #fff;
+	font-size: 40px;
+	font-size: 35px;
+}
