@@ -29,16 +29,19 @@
 	src: url(../../fonts/bell_mt/BellMTBold.ttf);
 }
 
+html,
 body {
 	width: 100%;
-	overflow-x: none;
-	margin: 0;
-	padding: 0;
+	overflow-x: hidden;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 .vh {
 	height: 100vh;
 }
+
+/* HOMEPAGE */
 
 /* Navbar */
 
@@ -62,9 +65,11 @@ body {
 	z-index: 100;
 }
 
-#nav p {
+#nav a {
 	font-family: creato;
 	z-index: 100;
+	color: #000;
+	text-decoration: none;
 }
 
 #main {
@@ -107,6 +112,14 @@ body {
 #nav .apply {
 	padding-left: 10%;
 } */
+
+@media only screen and (max-width: 576px) {
+	.navbar {
+		display: none;
+	}
+}
+
+/* Hero Section */
 
 svg {
 	z-index: 1;
@@ -335,8 +348,10 @@ svg {
 	margin-top: 3%;
 }
 
+/* Victory Section */
+
 #victory {
-	margin-top: 71.9%;
+	margin-top: 30%;
 }
 
 .victoryHeader {
@@ -397,7 +412,7 @@ svg {
 /* Cradle Section */
 
 #cradle-section {
-	margin-top: 44.2%;
+	margin-top: 40.2%;
 }
 
 #cradle-leaf {
@@ -504,7 +519,7 @@ svg {
 }
 
 .envision {
-	font-size: 18px;
+	font-size: 22px;
 	text-align: center;
 	font-family: creato;
 }
@@ -718,25 +733,26 @@ svg {
 	background: url(../../media/footer/footerbg.svg);
 	background-repeat: no-repeat;
 	background-size: 100%;
-	height: 62vh;
-	padding-top: 10%;
+	padding: 100px;
 }
 
 .whiteBars {
 	background: #fff;
-	height: 250px;
+	height: 100%;
 	width: 5px;
 	border-radius: 10px;
 }
 
 .footerOption1,
 .footerOption2 {
-	line-height: 50px;
+	line-height: 40px;
+	height: contain;
 }
 
 .clubText {
 	color: #fff;
 	text-decoration: none;
+	font-size: 14px;
 }
 
 ion-icon:first-child {
@@ -745,6 +761,5 @@ ion-icon:first-child {
 
 ion-icon {
 	color: #fff;
-	font-size: 40px;
-	font-size: 35px;
+	font-size: 30px;
 }

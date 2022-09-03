@@ -1,0 +1,212 @@
+/* ABOUT US PAGE */
+
+/* Fonts */
+
+@font-face {
+	font-family: creato;
+	src: url(../../fonts/creato-display/CreatoDisplay-Regular.otf);
+}
+
+@font-face {
+	font-family: creato-light;
+	src: url(../../fonts/creato-display/CreatoDisplay-Thin.otf);
+}
+
+@font-face {
+	font-family: bell;
+	src: url(../../fonts/bell_mt/BellMT.ttf);
+}
+
+@font-face {
+	font-family: bell-Thin;
+	src: url(../../fonts/bell_mt/bell-mt-fett.ttf);
+}
+
+@font-face {
+	font-family: bell-Italic;
+	src: url(../../fonts/bell_mt/BellMTItalic.ttf);
+}
+
+@font-face {
+	font-family: bell-bold;
+	src: url(../../fonts/bell_mt/BellMTBold.ttf);
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+/* Navigator */
+
+#header {
+	margin-top: 4%;
+}
+
+.homeNav span {
+	color: #000;
+}
+
+.homeNav {
+	color: #0774a3;
+	font-family: creato;
+	text-decoration: none;
+	font-size: 20px;
+	word-spacing: 10px;
+}
+
+/* Hero Section */
+
+#hero {
+	margin-top: 24.1%;
+}
+
+.aboutUsDiamonds {
+	width: 100%;
+}
+
+/* VD Story */
+
+#vdStory {
+	margin-top: 27.6%;
+}
+
+.vdStoryHead {
+	font-size: 54px;
+	font-family: bell-bold;
+	word-spacing: 14px;
+	letter-spacing: 3px;
+}
+
+.vdStoryTextDiv {
+	margin-top: 38.3%;
+}
+
+.vdStoryText {
+	font-size: 25px;
+	word-spacing: 15px;
+	font-family: creato-light;
+	letter-spacing: 10px;
+}
+
+.line1Div {
+	margin-top: 20.5%;
+}
+
+.line1 {
+	height: 100%;
+	width: 100%;
+}
+
+/* vdTitle Section */
+
+#vdTitle,
+#dreamTitle,
+#visionariesTitle,
+#communityTitle,
+#shortTitle,
+#longTitle,
+#messageTitle {
+	margin-top: 47%;
+}
+
+.vdHead,
+.dreamHead,
+.visionariesHead,
+.communityHead,
+.shortHead,
+.longHead,
+.messageHead {
+	font-family: bell;
+	font-style: normal;
+	font-size: 40px;
+	/* identical to box height, or 62px */
+	letter-spacing: 10px;
+	color: #000000;
+}
+
+.vdBar,
+.dreamBar,
+.visionariesBar,
+.communityBar,
+.shortBar,
+.longBar,
+.messageBar {
+	height: 7px;
+	background-color: #0070a0;
+	border-radius: 10px;
+	width: 10%;
+	transition: width 0.3s;
+	transform: translateY(-20px) translateX(-20px);
+}
+
+.vdSubTextDiv,
+.messageSubTextDiv {
+	margin-top: 7%;
+}
+
+.vdSubText {
+	font-size: 20px;
+	font-family: creato;
+	font-style: normal;
+}
+
+.messageSubText {
+	font-size: 20px;
+	font-family: bell-Italic;
+	font-style: normal;
+}
+
+.manikTextDiv {
+	margin-top: 6.1%;
+}
+
+.manikText {
+	font-size: 18px;
+	font-family: bell-bold;
+}
+
+.logoIg,
+.logoLIn {
+	font-size: 18px;
+}
+
+/* Line2 */
+.line2Div {
+	margin-top: 33.3%;
+}
+
+/* Believe Section */
+
+#believe {
+	margin-top: 38.1%;
+}
+
+.believeText {
+	font-size: 40px;
+	word-spacing: 5px;
+	font-family: bell;
+}
+
+.oneTextDiv {
+	margin-top: 31.7%;
+}
+
+.oneText {
+	font-size: 25px;
+	font-family: creato-light;
+	letter-spacing: 10px;
+	word-spacing: 5px;
+}
+
+.sparkDiamondDiv {
+	margin-top: 26.5%;
+}
+
+.sparkDiamond {
+	height: 100%;
+	width: 100%;
+}
